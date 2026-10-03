@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jameson Cho | Professional Portfolio</title>
+    <style>
+        /* Modern Reset & Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* Header / Contact Info */
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e9ecef;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #cc0033; /* Rutgers Scarlet Red */
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 0.95rem;
+            color: #6c757d;
+        }
+
+        .contact-info a {
+            color: #6c757d;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: #cc0033;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 50px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: #212529;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-left: 4px solid #cc0033;
+            padding-left: 15px;
+        }
+
+        /* Section 1: Personal Statement */
+        .statement-text {
+            font-size: 1.2rem;
+            color: #495057;
+            font-weight: 500;
+            line-height: 1.7;
+        }
+
+        /* Section 2: Skills */
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background-color: #e9ecef;
+            color: #495057;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.2s;
+        }
+
+        .skill-tag:hover {
+            background-color: #cc0033;
+            color: #ffffff;
+        }
+
+        /* Section 3: Projects Showcase */
+        .projects-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        @media (min-width: 768px) {
+            .projects-list {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .project-card {
+            border: 1px solid #dee2e6;
+            border-radius: 6px;
+            padding: 20px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+        }
+
+        .project-card h3 {
+            color: #cc0033;
+            font-size: 1.2rem;
+            margin-bottom: 5px;
+        }
+
+        .project-role {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            color: #6c757d;
+            font-weight: 600;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .project-card p {
+            font-size: 0.95rem;
+            color: #495057;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            font-size: 0.85rem;
+            color: #adb5bd;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <!-- Header & Info -->
+        <header>
+            <h1>Jameson Cho</h1>
+            <div class="contact-info">
+                <span>Old Bethpage, NY</span> | 
+                <span>(929) 437-7624</span> | 
+                <a href="mailto:chojameson@gmail.com">chojameson@gmail.com</a>
+                <br><br>
+                <strong>Rutgers University</strong> — Pursuing Bachelor of Arts and Sciences in Accounting (Graduation: June 2029)
+            </div>
+        </header>
+
+        <!-- Section 1: Personal Statement -->
+        <section id="personal-statement">
+            <h2>Personal Statement</h2>
+            <p class="statement-text">
+                An analytical and detail-oriented Accounting student at Rutgers University combining hands-on financial leadership as a fraternity treasurer with extensive, fast-paced operational experience to deliver impactful financial and team management solutions.
+            </p>
+        </section>
+
+        <!-- Section 2: Skills -->
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <span class="skill-tag">Basic Accounting</span>
+                <span class="skill-tag">Fundraising & Budgeting</span>
+                <span class="skill-tag">Data Analysis</span>
+                <span class="skill-tag">Microsoft Excel</span>
+                <span class="skill-tag">Java Programming</span>
+                <span class="skill-tag">Team Leadership</span>
+                <span class="skill-tag">POS Systems</span>
+                <span class="skill-tag">Microsoft Word & PowerPoint</span>
+                <span class="skill-tag">Social Media Marketing</span>
+            </div>
+        </section>
+
+        <!-- Section 3: Projects -->
+        <section id="projects">
+            <h2>Projects & Leadership Showcase</h2>
+            <div class="projects-list">
+                
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <h3>Fraternity Financial Management</h3>
+                    <span class="project-role">Treasurer / Fundraising Chair | Nu Alpha Phi</span>
+                    <p>Managed organizational budgets, tracked expenses, and maintained accurate financial records. Planned and executed successful fundraising initiatives to increase member engagement and secure philantropic funding.</p>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <h3>High-Volume Product Customization Event</h3>
+                    <span class="project-role">Production & Customer Experience | MKC Threads</span>
+                    <p>Operated production machinery to assemble custom orders under tight quality standards. Managed customer service and coordinated with team members during a large-scale event to hit strict daily production targets.</p>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <h3>Athletic Team Leadership & Fundraising</h3>
+                    <span class="project-role">Team Captain | NHP Wildcats Soccer Team</span>
+                    <p>Led game strategy development and team motivation over a multi-year tenure. Organized and promoted community fundraising initiatives, directly raising money to subsidize equipment and competition costs.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Jameson Cho. All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
